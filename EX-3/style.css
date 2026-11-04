@@ -1,0 +1,15 @@
+﻿.btn{
+    border: solid 4px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border-color:rgb(228, 145, 158);
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(75%);
+}
+.btn:active{
+    filter: brightness(85%);
+}

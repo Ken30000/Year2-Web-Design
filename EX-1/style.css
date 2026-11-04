@@ -1,0 +1,25 @@
+﻿body{
+    background-color: gray;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.btn{
+    border: none;
+    border-radius: 30px;
+    margin-top: 16px;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+.btn:hover{
+    filter: brightness(85%);
+}
