@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #c9d0dc;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr 270px;
+    width: 90vw;
+    max-width: 1200px;
+    height: 720px;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.container.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.8rem 0 1.8rem 1.8rem;
+    background-color: #ffffff;
+    border-right: 1px solid #edf0f5;
+}
+
+.header.logo-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.8rem 0.5rem 0;
+    text-decoration: none;
+    color: rgb(130, 130, 150);
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: rgb(32, 32, 172);
+}
+
+nav a.active {
+    color: #1a1a2e;
+    font-weight: bold;
+    border-right: 3px solid #3b3bef;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: auto 1.8rem 0 0;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: #f0f3fe;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #3b3bef;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem 2rem;
+    background-color: #f5f6fa;
+}
+
+.header.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    display: flex;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.banner {
+    height: 130px;
+    border-radius: 1rem;
+    background-color: #fde8ea;
+}
+
+.container.contend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    flex: 1;
+    margin: 1rem 0;
+}
+
+.contend.left,
+.contend.right {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: white;
+    min-height: 220px;
+}
+
+.contend.left {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+    row-gap: 0.8rem;
+}
+
+.classses {
+    grid-column: span 2;
+}
+
+.class {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f2f7;
+    font-size: 0.85rem;
+}
+
+.class:last-child {
+    border-bottom: none;
+}
+
+.container.course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.container.course .course {
+    height: 72px;
+    border-radius: 0.8rem;
+}
+
+.container.course .course:nth-child(1) {
+    background-color: #3c3b88;
+}
+
+.container.course .course:nth-child(2) {
+    background-color: #7b7ec8;
+}
+
+.container.course .course:nth-child(3) {
+    background-color: #fa6b6c;
+}
+
+.container.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem 1.6rem;
+    background-color: #ffffff;
+    border-left: 1px solid #edf0f5;
+}
+
+.header.right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.user-pfp {
+    text-align: center;
+}
+
+.pfp {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 0.6rem;
+    border-radius: 50%;
+    background-color: #f0f2f7;
+    overflow: hidden;
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.occupation {
+    font-size: 0.8rem;
+    color: #9aa0a6;
+}
+
+.container.proficiency {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.proficiencies {
+    background-color: #f8f9fc;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.container.reminder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.reminders {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.rem {
+    background-color: transparent;
+    padding: 0.4rem 0.2rem;
+    border-bottom: 1px solid #f0f2f7;
+    border-radius: 0;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.rem:last-child {
+    border-bottom: none;
+}
