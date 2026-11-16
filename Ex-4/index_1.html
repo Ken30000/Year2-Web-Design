@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .big {
+                display: inline-block;
+                background-color: #5cb85c;
+                font-weight: bold;
+                padding: 10px 20px;                
+                color: white;
+                font-size: 2rem;
+                border-radius: 8px;
+            }
+            .small {
+                display: none;
+                padding: 8px 16px;
+                background-color: #d9534f;
+                color: white;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+            @media only screen and (max-width: 600px) {
+                .big {
+                    display: none;
+                }
+                .small {
+                    display: inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <span class="small">I'm SMALL</span>
+                <span class="big">I'm BIG</span>
+            </div>
+        </div>
+    </body>
+</html>

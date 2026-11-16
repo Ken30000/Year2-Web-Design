@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #333333;
+    padding: 16px 24px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-toggle,
+.hamburger {
+    display: none;
+}
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        width: 24px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #4d4d4d;
+    }
+
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
