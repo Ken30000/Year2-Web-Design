@@ -1,9 +1,13 @@
-function count_character(array, char){
+function count_character(text, char) {
     let count = 0;
-    for (let i = 0; i < array.length; i++){
-        if (char == array[i]){
+    for (let i = 0; i < text.length; i++) {
+        if (char === text[i]) {
             count += 1;
         }
     }
-    return 0;
+    return count;
 }
+
+console.log(count_character("hello world", "o"));
+console.log(count_character("aaa bbb a", "a"));
+console.log(count_character("abc", "d"));
